@@ -20,6 +20,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           repository: nittsuj/nittsuj.my
+          ref: main
           ssh-key: ${{ secrets.VAULT_DEPLOY_KEY }}
           path: content
           fetch-depth: 0
